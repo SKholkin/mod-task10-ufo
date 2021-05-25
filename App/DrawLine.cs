@@ -87,7 +87,6 @@ namespace mod_task10_ufo
             g.ScaleTransform(0.5f, 0.5f);
             double min_distance = 1000000;
             double angle = taylor_series_arctan((double)(line_y2 - line_y1) / (line_x1 - line_x2), approx_degree);
-            g.DrawString(taylor_series_sin(angle, approx_degree).ToString(), new Font("Arial", 20), new SolidBrush(Color.Black), 100, 100);
             while(true){
                 y -= taylor_series_sin(angle, approx_degree) * step;
                 x += taylor_series_cos(angle, approx_degree) * step;
